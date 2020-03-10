@@ -1,0 +1,458 @@
+
+:root {
+	--mainColor: #fe9801;
+	--secondColor: #464869;
+	--white: #fff;
+	--black: #313131;
+	--text: #8c8c8c;
+	--grey: #F8F8F8;
+	--greyBg: #f4f4f4;
+	--orangeOpacity: #fff0d9;
+	--purpleOpacity: #ac96d7;
+	--blueOpacity: #f6f9ff;
+	--red: #f00;
+	--bgOpacity: rgba(0, 0, 0, .6);
+	--borderColor: rgb(226, 226, 226);
+}
+
+body {
+	background: var(--white);
+}
+
+/*#adminmenu,*/
+/*#adminmenu .wp-submenu,*/
+/*#adminmenuback,*/
+/*#adminmenuwrap {*/
+/*	width: 260px;*/
+/*	!*background-color: #5DA5DA;*!*/
+/*}*/
+
+/*#wpcontent,*/
+/*#wpfooter {*/
+/*	margin-left: 260px;*/
+/*}*/
+
+
+#adminmenu div.wp-menu-image:before {
+	color: var(--mainColor);
+	opacity: 0.8;
+}
+
+
+.AdminCustomWrapper {
+	padding: 20px;
+}
+
+.AdminCustomWrapper h1 {
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: var(--secondColor);
+}
+
+.FormWrapper {
+	width: 60%;
+	max-width: 800px;
+}
+
+.FormField {
+	position: relative;
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+.FormField.focused {
+	border-color: var(--mainColor);
+}
+
+.FormField label {
+	position: absolute;
+	height: 20px;
+	width: fit-content;
+	width: -webkit-fit-content;
+	width: max-content;
+	padding: 0 20px;
+	top: -10px;
+	left: 10px;
+	background: var(--white);
+	color: var(--mainColor);
+}
+
+.FormField .InputBox {
+	width: 100%;
+	border-radius: 5px;
+	border: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.FormField input {
+	height: 50px;
+	padding: 0 20px;
+}
+
+.FormField textarea {
+	height: 150px;
+	resize: none;
+	padding: 20px;
+}
+
+.FormField .InputBox:focus ,
+.FormField .InputBox:active {
+	box-shadow: none;
+	outline: 0;
+}
+
+.FormWrapper .submit {
+	float: none !important;
+	padding: 0 !important;
+}
+
+.FormWrapper .button-primary {
+	height: 50px;
+	display: block;
+	padding: 0 20px;
+	border-radius: 5px;
+	background: var(--mainColor);
+	border-color: var(--mainColor);
+	box-shadow: none;
+	color: var(--white);
+	text-shadow: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	min-width: 150px;
+}
+
+.FormWrapper .button-primary:hover ,
+.FormWrapper .button-primary:focus ,
+.FormWrapper .button-primary:active {
+	background: var(--mainColor);
+	border-color: var(--mainColor);
+	opacity:0.6;
+}
+
+.FieldImage {
+	margin-bottom: 40px;
+}
+
+.FieldImage .reviewImageBox {
+	height: 130px;
+	width: 130px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: var(--borderColor);
+	margin-bottom: 20px;
+	padding: 3px;
+}
+
+.FieldImage .reviewImageBox img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.FieldImage input {
+	display: none;
+}
+
+.FieldImage .FieldImageButtons {
+	display: flex;
+}
+
+.FieldImage .FieldImageButtons label {
+	width: 120px;
+	height: 45px;
+	background: var(--mainColor);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 45px;
+	text-transform: capitalize;
+	color: var(--white);
+	margin-right: 30px;
+}
+
+.FieldImage .FieldImageButtons label:hover ,
+.FieldImage .FieldImageButtons label:focus ,
+.FieldImage .FieldImageButtons label:active {
+	opacity:0.6;
+}
+
+.FieldImage .FieldImageButtons .removeImage {
+	width: 120px;
+	height: 45px;
+	background: var(--secondColor);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 45px;
+	text-transform: capitalize;
+	color: var(--white);
+	cursor: pointer;
+}
+
+.FieldImage .FieldImageButtons .removeImage:hover ,
+.FieldImage .FieldImageButtons .removeImage:focus ,
+.FieldImage .FieldImageButtons .removeImage:active {
+	background: var(--purpleOpacity);
+	border-color: var(--purpleOpacity);
+}
+
+.displayImageField .FieldImageButtons .removeImage{
+    display: block;
+}
+
+.displayImageField .FieldImageButtons .uploadImageBtn {
+    display: none;
+}
+
+.uploadImageField .FieldImageButtons .removeImage{
+    display: none;
+}
+
+.imagesBlock {
+	display: flex;
+	width: 100%;
+	border: 1px solid var(--borderColor);
+	margin-bottom: 40px;
+	border-radius: 5px;
+}
+
+.imagesBlock .block {
+	width: 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.imagesBlock .block:nth-child(2) {
+	border-right: 1px solid var(--borderColor);
+	border-left: 1px solid var(--borderColor);
+}
+.imagesBlock .block h3 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+.imagesBlock .FieldImage {
+	margin-bottom: 0;
+}
+
+.list-box {
+	margin-bottom: 40px;
+}
+
+.list-box-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.list-box-item input {
+	height: 50px;
+	width: calc( 100% - 130px );
+	border: 1px solid var(--borderColor);
+	border-radius: 5px;
+	padding: 0 20px;
+}
+
+.list-box .list-btn {
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	background: var(--mainColor);
+	border-color: var(--mainColor);
+	box-shadow: none;
+	color: var(--white);
+	text-shadow: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity:0.6;
+}
+
+.list-box .list-btn:hover ,
+.list-box .list-btn:focus ,
+.list-box .list-btn:active {
+	background: var(--mainColor);
+	border-color: var(--mainColor);
+	opacity:1;
+}
+
+.list-box-item .delete-Btn {
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	background: var(--red);
+	border-color: var(--red);
+	box-shadow: none;
+	color: var(--white);
+	text-shadow: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-left: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.list-box-item .delete-Btn:hover ,
+.list-box-item .delete-Btn:focus ,
+.list-box-item .delete-Btn:active {
+	background: var(--red);
+	border-color: var(--red);
+	opacity:1;
+}
+
+.linksField {
+	margin-bottom: 30px;
+}
+
+.linksField label {
+	color: var(--mainColor);
+	text-transform: uppercase;
+	margin-bottom: 14px;
+	display: block;
+}
+
+.linksField table {
+	border: 1px solid #f3f3f3;
+	width: 100%;
+}
+
+.linksField  td {
+	height: 45px;
+	vertical-align: middle;
+	padding: 0 20px;
+}
+
+.linksField table td:first-of-type {
+	background: #f3f3f3;
+	color: var(--secondColor);
+}
+
+.linksField table td:last-of-type {
+	background: var(--white);
+}
+
+.linksField input {
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	height: 100%;
+}
+
+.linksField input:focus ,
+.linksField input:active {
+	border:0 ;
+	box-shadow: none;
+	outline: 0;
+}
+
+#poststuff .postbox-container {
+	width: 100%;
+	max-width: 900px;
+}
+
+#poststuff .postbox-container .FormWrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
+#poststuff .stuffbox>h3 ,
+#poststuff h2 ,
+#poststuff h3.hndle {
+	background: var(--grey);
+	padding: 8px 15px;
+	font-size: 25px;
+	text-transform: capitalize;
+	color: var(--secondColor);
+}
+
+#accordion h3{
+	background: #eee;
+	padding: 10px;
+	margin:10px 0 0 0;
+	outline: none;
+	border-top: 3px double #CECECE;
+	font-size: 14px;
+	color: #005882;
+}
+#accordion .accordion-div{
+	background: #FBFBFB;
+	border: 1px solid #eee;
+}
+#accordion .single-item:first-child span.remove{
+	display: none;
+}
+#accordion h3 div.actions{
+	float: left;
+}
+#accordion h3 div.actions span{
+	font-size: 13px;
+	cursor: pointer;
+	margin: 0 7px;
+}
+#accordion h3 div.actions span.remove{
+	color: red;
+}
+#accordion h3 div.actions span.add{
+	color: green;
+}
+#accordion .ui-sortable-placeholder{
+	background: #0073aa;
+	border: 1px dashed #ddd;
+	visibility: visible !important;
+}
+span.order-count{
+	display: inline-block;
+    background-color: #d54e21;
+    color: #fff;
+    font-size: 9px;
+    line-height: 17px;
+    font-weight: 600;
+    margin: 1px 0 0 2px;
+    vertical-align: top;
+    border-radius: 50%;
+    padding: 0 7px;
+}
+
+.new-order{
+	font-weight: bold;
+    background: #1c91ca;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.progress-order{
+	font-weight: bold;
+    background: #f98522;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.done-order{
+	font-weight: bold;
+    background: #21a718;
+    padding: 3px 10px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.list-img{
+	display: inline-block;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+#event-popup-url , #event-link-url{
+	display: none;
+}
